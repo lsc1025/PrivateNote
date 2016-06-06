@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <style type="text/css">
+        html {
+			min-width:300px;
+        }
+
+        body {
+            background: url("/res/other/weatherBg.jpg") no-repeat center center fixed;
+            background-size: cover;
+			
+        }
+		
+		#mtag{
+			display:none;
+		}
+		
+		.container{
+			color: antiquewhite;
+		}
+
+        .center {
+            text-align: center;
+        }
+		
+		.space10 {
+			height:10px;
+		}
+		
+		#signup, #signOn {
+			display:none;
+		}
+
+        #bg {
+        }
+		
+		footer{
+			
+			font-size:0.7em;
+		
+		}
+
+        #tag {
+			margin-top:20%;
+        }
+		@media(max-width:500px) {
+			#tag{
+				display:none;
+			}
+			#mtag{
+				margin-top:30%;
+				display:block;
+				
+			}
+		}
+    </style>
+
+    <title>Your Private Notes</title>
+
+    <link rel="stylesheet" href="/res/vendor/bootstrap.min.css" />
+
+</head>
+
+<body>
+
+    <div id="bg" class="container">
+
+		<h1 id="tag" class="center">Welcome to Private Notes</h1>
+		<h1 id="mtag" class="center">Private Notes</h1>
+		
+        <form class="center col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4" id="form" method="post">
+         
+			<p>Store your secrets securely here.</label>
+			
+			<div id="err"></div>
+			
+            <fieldset class="form-group" name="signin" id="signin">
+			               
+                <input type="text" class="form-control" id="usrName" name="usrName" placeholder="Your user name" value='' />
+				<div class="space10"></div>
+				<input type="password" class="form-control" id="psd" name="psd" placeholder="Your password"/>
+				<div class="space10"></div>
+				
+				<label class="checkbox">
+					<input type="checkbox" id="keep" name="keep"/>
+					Keep me signed in
+				</label>		
+				
+				<button type="button" name="sb_signin" id="sb_signin" class="btn btn-primary">Sign in</button>
+				<div class="space10"></div>
+				<p id="newUsrTag">New here? Please <a href="#" class="toggleBtn">Sign up</a> here.</p>
+				
+            </fieldset>
+			
+			<fieldset class="form-group" id="signup">	
+				
+				<input type="text" class="form-control" id="usrName_new" name="usrName_new" placeholder="Your user name" value='' />
+				<div class="space10"></div>
+				<input type="email" class="form-control" id="email" name="email" placeholder="Your email" value=''/>
+				<div class="space10"></div>
+				<input type="password" class="form-control" id="psd_new" name="psd_new" placeholder="Your password"/>
+				<div class="space10"></div>
+				<input type="password" class="form-control" id="repsd_new" name="repsd_new" placeholder="Reenter password"/>
+				<div class="space10"></div>
+				<button type="button" name="sb_signup" id="sb_signup" class="btn btn-primary">Sign up</button>
+				<div class="space10"></div>
+				<p>Already have an account? <a href="#" class="toggleBtn">Sign in</a> here.</p>
+				
+			</fieldset>
+			
+			<div class="form-group" id="signOn">
+				
+				<button class="btn btn-success" id="sb_signon">Sign On</button>
+				
+			</div>
+
+        </form>
+
+        <br />
+        
+		<footer class="navbar navbar-fixed-bottom">
+			<div class="container center">
+				&copy 2016 Shichen Liu. Read our <a href="#" target="_blank">privcy notice</a>.
+			</div>
+		</footer>
+		
+    </div>
+
+    <script src="/res/vendor/jquery.min.js"></script>
+    <script src="/res/vendor/bootstrap.min.js"></script>
+	
+	<script src="login.js"></script>
+	
+</body>
+
+</html>
