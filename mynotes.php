@@ -100,7 +100,7 @@
 				
 				<div class="pull-xs-right">
 					<ul class="nav nav-inline" id="topBtn">
-						<li class="nav-item"><a class="nav-link" href="auth.php?cmd=logout" id="logout">Log Out</a></li>
+						<li class="nav-item"><a class="nav-link" href="home.php?cmd=logout" id="logout">Log Out</a></li>
 						<li class="nav-item"><a class="nav-link" href="#"><?php echo $_SESSION['usrName']?></a></li>
 					</ul>
 				</div>
@@ -145,7 +145,7 @@
 			
 			isSaved = false;
 			
-		}, 5000);
+		}, 2000);
 		
 		$('#content').bind('input propertychange', function(){
 		
